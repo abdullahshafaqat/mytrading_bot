@@ -114,6 +114,14 @@ func (db *DB) Migrate() error {
 		updated_at   TIMESTAMP NOT NULL DEFAULT NOW()
 	);
 
+	CREATE TABLE IF NOT EXISTS paper_equity (
+		id           SERIAL PRIMARY KEY,
+		trade_id     VARCHAR(100),
+		equity       DECIMAL(20,8) NOT NULL,
+		drawdown     DECIMAL(20,8) NOT NULL,
+		ts           TIMESTAMP NOT NULL DEFAULT NOW()
+	);
+
 	INSERT INTO paper_metrics (id, wins, losses, expired, total_pnl, max_drawdown, updated_at)
 	VALUES (1, 0, 0, 0, 0, 0, NOW())
 	ON CONFLICT (id) DO NOTHING;

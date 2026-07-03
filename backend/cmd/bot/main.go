@@ -156,6 +156,15 @@ func main() {
 			w.Header().Set("Content-Type", "application/json")
 			json.NewEncoder(w).Encode(report)
 		})
+		http.HandleFunc("/paper/equity", func(w http.ResponseWriter, r *http.Request) {
+			equity, _ := db.GetPaperEquity()
+			w.Header().Set("Content-Type", "application/json")
+			json.NewEncoder(w).Encode(equity)
+		})
+		http.HandleFunc("/config", func(w http.ResponseWriter, r *http.Request) {
+			w.Header().Set("Content-Type", "application/json")
+			json.NewEncoder(w).Encode(cfg)
+		})
 		http.HandleFunc("/paper/export.csv", func(w http.ResponseWriter, r *http.Request) {
 			trades, err := db.GetPaperHistory(10000)
 			if err != nil {

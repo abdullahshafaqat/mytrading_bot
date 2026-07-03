@@ -127,6 +127,11 @@ func (t *Tracker) updateMetrics(closed []Trade) {
 		if t.metrics.TotalPnL < t.metrics.MaxDrawdown {
 			t.metrics.MaxDrawdown = t.metrics.TotalPnL
 		}
+
+		// Save equity curve point
+		baseEquity := 1000.0
+		currentEquity := baseEquity + t.metrics.TotalPnL
+		t.store.SaveEquityPoint(tr.ID, currentEquity, t.metrics.MaxDrawdown, time.Now())
 	}
 
 	t.metrics.UpdatedAt = time.Now()

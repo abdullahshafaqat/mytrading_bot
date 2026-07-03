@@ -1,6 +1,8 @@
 package storage
 
 import (
+	"time"
+
 	"github.com/abdullahshafaqat/trading-bot/internal/logger"
 	"github.com/abdullahshafaqat/trading-bot/internal/paper"
 )
@@ -169,4 +171,45 @@ func (db *DB) GetPaperReport() (map[string]interface{}, error) {
 		"avg_hold_minutes": avgHold,
 		"open_trades":      openTrades,
 	}, nil
+}
+
+type EquityPoint struct {
+	Timestamp time.Time
+	TradeID   string
+	Equity    float64
+	Drawdown  float64
+}
+
+func (db *DB) SaveEquityPoint(tradeID string, equity, drawdown float64, ts time.Time) error {
+	query := `INSERT INTO paper_equity (trade_id, equity, drawdown, ts) VALUES ($1, $2, $3, $4)`
+	_, err := db.conn.Exec(query, tradeID, equity, drawdown, ts)
+	return err
+}
+
+func (db *DB) GetPaperEquity() ([]map[string]interface{}, error) {
+	query := `SELECT ts, trade_id, equity, drawdown FROM paper_equity ORDER BY ts ASC`
+	rows, err := db.conn.Query(query)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+
+	var points []map[string]interface{}
+	for rows.Next() {
+		var ts time.Time
+		var tradeID string
+		var eq, dd float64
+		if err := rows.Scan(&ts, &tradeID, &eq, &dd); err == nil {
+			points = append(points, map[string]interface{}{
+				"timestamp": ts.Format("15:04"),
+				"trade_id":  tradeID,
+				"equity":    eq,
+				"drawdown":  dd,
+			})
+		}
+	}
+	if points == nil {
+		return []map[string]interface{}{}, nil
+	}
+	return points, nil
 }
