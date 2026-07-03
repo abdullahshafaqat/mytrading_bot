@@ -1,0 +1,133 @@
+[INFO] [BOT] BOT STARTED
+[INFO] [BOT] Seeding 15m...
+[INFO] [BOT] Indicators Ready
+[INFO] [BOT] Seeding 4h...
+[INFO] [BOT] Confirmation Ready
+[INFO] [DB] Connected to PostgreSQL ✅
+[INFO] [DB] Tables ready ✅
+[INFO] [DB] DB Connected
+[INFO] [WS] Streams Started
+[INFO] [BOT] [READY] EMA
+[INFO] [BOT] [READY] RSI
+[INFO] [BOT] [READY] ATR
+[INFO] [BOT] [READY] VOLMA
+[INFO] [BOT] [READY] 4H_CONFIRM
+[INFO] [WS] WebSocket connected:BTCUSDT15m
+[INFO] [WS] WebSocket connected:BTCUSDT4h
+[INFO] [BOT] Seeding 15m...
+[INFO] [BOT] Indicators Ready
+[INFO] [BOT] Seeding 4h...
+[INFO] [BOT] Confirmation Ready
+[INFO] [DB] Connected to PostgreSQL ✅
+[INFO] [DB] Tables ready ✅
+[INFO] [DB] DB Connected
+[INFO] [WS] Streams Started
+[INFO] [BOT] [READY] EMA
+[INFO] [BOT] [READY] RSI
+[INFO] [BOT] [READY] ATR
+[INFO] [BOT] [READY] VOLMA
+[INFO] [BOT] [READY] 4H_CONFIRM
+[INFO] [WS] WebSocket connected:BTCUSDT4h
+[INFO] [WS] WebSocket connected:BTCUSDT15m
+[INFO] [BOT] Seeding 15m...
+[INFO] [BOT] Indicators Ready
+[INFO] [BOT] Seeding 4h...
+[INFO] [BOT] Confirmation Ready
+[INFO] [DB] Connected to PostgreSQL ✅
+[INFO] [DB] Tables ready ✅
+[INFO] [DB] DB Connected
+[INFO] [WS] Streams Started
+[INFO] [BOT] [READY] EMA
+[INFO] [BOT] [READY] RSI
+[INFO] [BOT] [READY] ATR
+[INFO] [BOT] [READY] VOLMA
+[INFO] [BOT] [READY] 4H_CONFIRM
+[INFO] [BOT] Health server listening on :8080
+[INFO] [WS] WebSocket connected:BTCUSDT15m
+[INFO] [WS] WebSocket connected:BTCUSDT4h
+[INFO] [BOT] Seeding 15m...
+[INFO] [BOT] Indicators Ready
+[INFO] [BOT] Seeding 4h...
+[INFO] [BOT] Confirmation Ready
+[INFO] [DB] Connected to PostgreSQL ✅
+[INFO] [DB] Tables ready ✅
+[INFO] [DB] DB Connected
+[INFO] [WS] Streams Started
+[INFO] [BOT] [READY] EMA
+[INFO] [BOT] [READY] RSI
+[INFO] [BOT] [READY] ATR
+[INFO] [BOT] [READY] VOLMA
+[INFO] [BOT] [READY] 4H_CONFIRM
+[INFO] [BOT] Health server listening on :8080
+[INFO] [BOT] Health server error: listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+[INFO] [WS] WebSocket connected:BTCUSDT15m
+[INFO] [WS] WebSocket connected:BTCUSDT4h
+[INFO] [BOT] Seeding 15m...
+[INFO] [BOT] Indicators Ready
+[INFO] [BOT] Seeding 4h...
+[INFO] [BOT] Confirmation Ready
+[INFO] [DB] Connected to PostgreSQL ✅
+[INFO] [DB] Tables ready ✅
+[INFO] [DB] DB Connected
+[INFO] [WS] Streams Started
+[INFO] [BOT] [READY] EMA
+[INFO] [BOT] [READY] RSI
+[INFO] [BOT] [READY] ATR
+[INFO] [BOT] [READY] VOLMA
+[INFO] [BOT] [READY] 4H_CONFIRM
+[INFO] [BOT] Health server listening on :8080
+[INFO] [WS] WebSocket connected:BTCUSDT4h
+[INFO] [WS] WebSocket connected:BTCUSDT15m
+[INFO] [WS] WebSocket connected:BTCUSDT1m
+[INFO] [BOT] Seeding 15m...
+[INFO] [BOT] Indicators Ready
+[INFO] [BOT] Seeding 4h...
+[INFO] [BOT] Confirmation Ready
+[INFO] [DB] Connected to PostgreSQL ✅
+[INFO] [DB] Tables ready ✅
+[INFO] [DB] DB Connected
+[INFO] [WS] Streams Started
+[INFO] [BOT] [READY] EMA
+[INFO] [BOT] [READY] RSI
+[INFO] [BOT] Health server listening on :8080
+[INFO] [BOT] [READY] ATR
+[INFO] [BOT] [READY] VOLMA
+[INFO] [BOT] [READY] 4H_CONFIRM
+[INFO] [WS] WebSocket connected:BTCUSDT4h
+[INFO] [WS] WebSocket connected:BTCUSDT15m
+[INFO] [WS] WebSocket connected:BTCUSDT1m
+[INFO] [BOT] Seeding 15m...
+[INFO] [BOT] Indicators Ready
+[INFO] [BOT] Seeding 4h...
+[INFO] [BOT] Confirmation Ready
+[INFO] [DB] Connected to PostgreSQL ✅
+[INFO] [DB] Tables ready ✅
+[INFO] [DB] DB Connected
+[INFO] [WS] Streams Started
+[INFO] [BOT] [READY] EMA
+[INFO] [BOT] [READY] RSI
+[INFO] [BOT] [READY] ATR
+[INFO] [BOT] [READY] VOLMA
+[INFO] [BOT] [READY] 4H_CONFIRM
+[INFO] [BOT] Health server listening on :8080
+[INFO] [WS] WebSocket connected:BTCUSDT4h
+[INFO] [WS] WebSocket connected:BTCUSDT1m
+[INFO] [WS] WebSocket connected:BTCUSDT15m
+[INFO] [BOT] Paper Trade test-trade-1 Closed: LOSS (PnL: 66.67%)
+[INFO] [BOT] Seeding 15m...
+[INFO] [BOT] Indicators Ready
+[INFO] [BOT] Seeding 4h...
+[INFO] [BOT] Confirmation Ready
+[INFO] [DB] Connected to PostgreSQL ✅
+[INFO] [DB] Tables ready ✅
+[INFO] [DB] DB Connected
+[INFO] [WS] Streams Started
+[INFO] [BOT] [READY] EMA
+[INFO] [BOT] [READY] RSI
+[INFO] [BOT] [READY] ATR
+[INFO] [BOT] [READY] VOLMA
+[INFO] [BOT] [READY] 4H_CONFIRM
+[INFO] [BOT] Health server listening on :8080
+[INFO] [WS] WebSocket connected:BTCUSDT1m
+[INFO] [WS] WebSocket connected:BTCUSDT15m
+[INFO] [WS] WebSocket connected:BTCUSDT4h
