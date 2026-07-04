@@ -1,0 +1,9 @@
+.env
+.env.*
+
+logs/
+backtests/
+
+*.exe
+*.out
+*.err
