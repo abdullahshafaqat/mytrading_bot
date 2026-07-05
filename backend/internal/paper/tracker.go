@@ -13,6 +13,7 @@ type Store interface {
 	LoadOpenPaperTrades() ([]Trade, error)
 	GetPaperMetrics() (Metrics, error)
 	SavePaperMetrics(m Metrics) error
+	SaveEquityPoint(tradeID string, equity, drawdown float64, ts time.Time) error
 	GetPaperHistory(limit int) ([]Trade, error)
 }
 
